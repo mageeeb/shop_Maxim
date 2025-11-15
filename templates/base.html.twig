@@ -20,9 +20,11 @@
         {% endblock %}
     </head>
     <body>
+        <div class="super_container">
         {% include ('partials/header.html.twig') %}
         {% block body %}{% endblock %}
         {% include ('partials/footer.html.twig')%}
+        </div>
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('styles/bootstrap4/popper.js') }}"></script>
     <script src="{{ asset('styles/bootstrap4/bootstrap.min.js') }}"></script>
